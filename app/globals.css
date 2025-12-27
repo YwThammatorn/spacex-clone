@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-pc: 1920px;
-  --breakpoint-ipad: 1180px;
-  --breakpoint-phone: 390px;
+  --breakpoint-pc: 1921px;
+  --breakpoint-ipad: 1181px;
+  --breakpoint-phone: 721px;
   --font-ddin: var(--font-ddin);
   --font-ddinBold: var(--font-ddinBold);
   --white-90: var(--white-90);
@@ -46,9 +46,12 @@ p{
   padding:0;
 }
 
-button{
-  padding: 5px;
-  border: 0.125rem solid white;
-  border-radius: 0.5rem;
-  background-color: var(--white-90);
+@layer base{
+  button{
+    padding: 5px;
+    border: 0.125rem solid white;
+    border-radius: 0.5rem;
+    background-color: var(--white-90);
+  }
 }
+
