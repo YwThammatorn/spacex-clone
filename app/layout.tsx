@@ -2,13 +2,16 @@ import type { Metadata } from "next";
 import LocalFont from "next/font/local"
 import "./globals.css";
 
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 const ddin = LocalFont({
-  src: '../font/d-din/D-DIN.otf',
+  src: '../fonts/d-din/D-DIN.otf',
   variable: '--font-ddin',
 })
 
 const ddinBold = LocalFont({
-  src: '../font/d-din/D-DIN-Bold.otf',
+  src: '../fonts/d-din/D-DIN-Bold.otf',
   variable: '--font-ddinBold'
 })
 
@@ -23,12 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${ddin.variable} ${ddinBold.variable}`}
-      >
-        {children}
+    <html lang="en" className=
+    {`${ddin.variable} ${ddinBold.variable}`}
+    >
+      <body className="relative">
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
+      
     </html>
   );
 }
