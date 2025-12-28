@@ -6,15 +6,28 @@
   --breakpoint-phone: 721px;
   --font-ddin: var(--font-ddin);
   --font-ddinBold: var(--font-ddinBold);
+  --font-ddinCond: var(--font-ddinCond);
   --white-90: var(--white-90);
 }
 
 :root {
   --background: #000;
   --foreground: #fff;
-  --white-90: #F0F0FAE6;
-  --white-hover: #F0F0FA;
-  --white-10: #F0F0FA1A;
+  --white-100: rgba(240, 240, 250, 1);
+  --white-90: rgba(240, 240, 250, .9);
+  --white-80: rgba(240, 240, 250, .8);
+  --white-70: rgba(240, 240, 250, .7);
+  --white-60: rgba(240, 240, 250, .6);
+  --white-50: rgba(240, 240, 250, .5);
+  --white-35: rgba(240, 240, 250, .35);
+  --white-30: rgba(240, 240, 250, .3);
+  --white-25: rgba(255, 255, 255, .25);
+  --white-15: rgba(240, 240, 250, .15);
+  --white-10: rgba(240, 240, 250, .1);
+  --black-50: rgba(0, 0, 0, .5);
+  --black-80: rgba(0, 0, 0, .8);
+  --gray-80: rgba(37, 38, 40, .8);
+  --gray-60: rgba(37, 38, 40, .6);
 }
 
 
@@ -40,11 +53,6 @@ h2{
   padding:0;
 }
 
-p{
-  font-family: var(--font-ddin);
-  margin:0;
-  padding:0;
-}
 
 @layer base{
   button{
@@ -52,6 +60,12 @@ p{
     border: 0.125rem solid white;
     border-radius: 0.5rem;
     background-color: var(--white-90);
+  }
+
+  p{
+    font-family: var(--font-ddin);
+    margin:0;
+    padding:0;
   }
 }
 

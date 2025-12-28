@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
-
 import { Menu } from "lucide-react"
+
+import Dropdown from "./client/Dropdown"
 
 const Navbar = () => {
   return (
@@ -11,22 +12,23 @@ const Navbar = () => {
         <Image src="/spacex_logo.png" alt="spacex_logo"
           width={137}
           height={19}
+          className="mr-[5px]"
         />
       </div>
 
       {/* links */}
-      <div className="flex gap-[2.3125rem] text-[0.813rem] tracking-[0.09em] uppercase font-ddin font-[700] max-ipad:hidden">
-        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-hover)]">Vehicles</Link>
-        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-hover)]">Launches</Link>
-        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-hover)]">Human spaceflight</Link>
-        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-hover)]">Rideshare</Link>
-        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-hover)]">Starlink</Link>
-        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-hover)]">Starshield</Link>
-        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-hover)]">Company</Link>
-        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-hover)]">Shop</Link>
+      <div className="flex gap-[2.46vw] text-[0.813rem] tracking-[0.09em] uppercase font-ddin font-[700] max-ipad:hidden">
+        <Dropdown />
+        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Launches</Link>
+        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Human spaceflight</Link>
+        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Rideshare</Link>
+        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Starlink</Link>
+        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Starshield</Link>
+        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Company</Link>
+        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Shop</Link>
       </div>
 
-      {/* ipad button */}
+      {/* menu button */}
       <button className="bg-transparent border-none max-pc:hidden max-ipad:flex"><Menu width={24} height={24} /></button>
     </div>
   )
