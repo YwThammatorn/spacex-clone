@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Menu } from "lucide-react"
 
 import Dropdown from "./client/Dropdown"
+import DropdownIpad from "./client/Dropdown-Ipad"
 
 const Navbar = () => {
   return (
@@ -28,8 +28,7 @@ const Navbar = () => {
         <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Shop</Link>
       </div>
 
-      {/* menu button */}
-      <button className="bg-transparent border-none max-pc:hidden max-ipad:flex"><Menu width={24} height={24} /></button>
+      <DropdownIpad />
     </div>
   )
 }

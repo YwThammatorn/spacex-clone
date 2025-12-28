@@ -31,16 +31,12 @@
 }
 
 
-body {
-  background-color: var(--background);
-  color: var(--white-90);
-  font-family: var(--font-ddin);
-  letter-spacing: 0.02em;
-}
-
 h1{
   font-family: var(--font-ddinBold);
   font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+  color: var(--white-100);
   text-transform: uppercase;
   margin:0;
   padding:0;
@@ -55,6 +51,12 @@ h2{
 
 
 @layer base{
+  body {
+    background-color: var(--background);
+    color: var(--white-90);
+    font-family: var(--font-ddin);
+  }
+
   button{
     padding: 5px;
     border: 0.125rem solid white;
