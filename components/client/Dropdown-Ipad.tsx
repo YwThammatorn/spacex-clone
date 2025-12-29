@@ -14,6 +14,8 @@ const DropdownIpad = () => {
   const handleClickX = (e : MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
     setIshidden(!ishidden)
+    setIsclickC(false)
+    setIsclickV(false)
   }
 
   const handleClickV = (e : MouseEvent<HTMLDivElement>) => {
