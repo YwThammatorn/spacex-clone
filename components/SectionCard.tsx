@@ -33,7 +33,7 @@ const SectionCard = ({ bgVideo, posterVideo, bgImg, header, desc, bgGradient, te
         }
         
         <div className={"absolute max-w-[650px] " + textDir + " max-ipad:w-[50%]"}>
-          <h1 className={"uppercase max-w-[585px] leading-["+ lineHeight +"rem]"}>{header}</h1>
+          <h1 className={"uppercase max-w-[585px]"} style={{lineHeight: lineHeight+'rem'}}>{header}</h1>
           <p className="mt-[15px]">{desc}</p>
           {button}
         </div>

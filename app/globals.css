@@ -49,6 +49,29 @@ h2{
   padding:0;
 }
 
+h3{
+  font-family: var(--font-ddinBold);
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: var(--white-100);
+  text-transform: uppercase;
+  margin:0;
+  padding:0;
+  height: fit-content;
+}
+
+h4{
+  font-family: var(--font-ddinBold);
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+  color: var(--white-100);
+  text-transform: uppercase;
+  margin:0;
+  padding:0;
+}
+
 
 @layer base{
   body {

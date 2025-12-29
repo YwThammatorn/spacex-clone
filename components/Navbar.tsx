@@ -8,13 +8,13 @@ const Navbar = () => {
   return (
     <div className='fixed z-10 flex justify-start items-center gap-[46px] w-full h-[4.625rem] pl-[3.945%] pr-[3.945%] bg-[linear-gradient(#00000099_0%,#00000000_95%)] max-ipad:justify-between'>
       {/* logo */}
-      <div>
+      <Link href={"/"}>
         <Image src="/spacex_logo.png" alt="spacex_logo"
           width={137}
           height={19}
           className="mr-[5px]"
         />
-      </div>
+      </Link>
 
       {/* links */}
       <div className="flex gap-[2.46vw] text-[0.813rem] tracking-[0.09em] uppercase font-ddin font-[700] max-ipad:hidden">
