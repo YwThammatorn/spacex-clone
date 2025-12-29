@@ -15,7 +15,7 @@ export default function Home() {
         lineHeight={3}
         header="Making Life Multiplanetary"
         desc="SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not."
-        button={<NavBtn name="Explore" dest=" " />}
+        button={<NavBtn name="Explore" dest=" " haveArrow={true} />}
       />
 
       {/* subpage 2 */}
@@ -28,7 +28,7 @@ export default function Home() {
         lineHeight={3.5}
         header="Revolutionizing space technology"
         desc="SpaceX's Starship spacecraft and Super Heavy rocket is a fully reusable transportation system designed to carry both crew and cargo to Earth orbit, the Moon, Mars, and beyond."
-        button={<NavBtn name="Learn more" dest=" " />}
+        button={<NavBtn name="Learn more" dest=" " haveArrow={true} />}
       />
 
       {/* subpage 3 */}
@@ -41,7 +41,7 @@ export default function Home() {
         lineHeight={3}
         header="World's leading launch service provider"
         desc="SpaceX leads the world in launches with its reliable, reusable rockets and is developing the fully and rapidly reusable rockets necessary to transform humanity's ability to access space into something as routine as air travel."
-        button={<NavBtn name="Reserve your ride" dest=" " />}
+        button={<NavBtn name="Reserve your ride" dest=" " haveArrow={true} />}
       />
 
       {/* subpage 4 */}
@@ -54,7 +54,7 @@ export default function Home() {
         lineHeight={3.5}
         header="Advancing human spaceflight"
         desc="Since returning human spaceflight capabilities to the United States in 2020, SpaceX is helping bulid a new era where not just hundreds of people, but thousands and ultimately millions will be able to explore space."
-        button={<NavBtn name="Join a Mission" dest=" " />}
+        button={<NavBtn name="Join a Mission" dest=" " haveArrow={true} />}
       />
 
       {/* subpage 5 */}
@@ -67,7 +67,7 @@ export default function Home() {
         lineHeight={3}
         header="Delivering high-speed internet from space"
         desc="Starlink is the world's most advanced satelite constellation in low-Earth orbit, delivering reliable broadband internet capable of supporting streaming, online gaming, video calls, and more."
-        button={<NavBtn name="Order now" dest=" " />}
+        button={<NavBtn name="Order now" dest=" " haveArrow={true} />}
       />
     </div>
   );

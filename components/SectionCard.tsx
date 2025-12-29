@@ -1,4 +1,3 @@
-
 interface card{
     bgVideo: string,
     posterVideo: string,

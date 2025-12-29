@@ -23,7 +23,7 @@ const Navbar = () => {
         <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Human spaceflight</Link>
         <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Rideshare</Link>
         <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Starlink</Link>
-        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Starshield</Link>
+        <Link href={'/starshield'} className="hover:cursor-pointer hover:text-[var(--white-100)]">Starshield</Link>
         <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Company</Link>
         <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Shop</Link>
       </div>
