@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="flex gap-[2.46vw] text-[0.813rem] tracking-[0.09em] uppercase font-ddin font-[700] max-ipad:hidden">
         <Dropdown />
         <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Launches</Link>
-        <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Human spaceflight</Link>
+        <Link href={'/humanspaceflight'} className="hover:cursor-pointer hover:text-[var(--white-100)]">Human spaceflight</Link>
         <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Rideshare</Link>
         <Link href={''} className="hover:cursor-pointer hover:text-[var(--white-100)]">Starlink</Link>
         <Link href={'/starshield'} className="hover:cursor-pointer hover:text-[var(--white-100)]">Starshield</Link>

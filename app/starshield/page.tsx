@@ -52,6 +52,7 @@ const Starshield = () => {
         <SectionCard 
           bgVideo="" 
           posterVideo=""
+          videoDir=""
           bgImg="https://www.spacex.com/assets/images/starshield/capacity.webp"
           bgGradient='bg-[linear-gradient(to_right,#00000000,#000)]'
           textDir="top-[40%] right-[150px] w-[32%]"
@@ -65,6 +66,7 @@ const Starshield = () => {
         <SectionCard 
           bgVideo="" 
           posterVideo=""
+          videoDir=""
           bgImg="https://www.spacex.com/assets/images/starshield/modular-design.webp"
           bgGradient='bg-[linear-gradient(to_right,#00000000,#000)]'
           textDir="top-[40%] right-[150px] w-[32%]"
@@ -78,6 +80,7 @@ const Starshield = () => {
         <SectionCard 
           bgVideo="" 
           posterVideo=""
+          videoDir=""
           bgImg="https://www.spacex.com/assets/images/starshield/interoperability.webp"
           bgGradient='bg-[linear-gradient(to_left,#00000000,#000)]'
           textDir="top-[40%] left-[100px] w-[32%]"
@@ -91,6 +94,7 @@ const Starshield = () => {
         <SectionCard 
           bgVideo="" 
           posterVideo=""
+          videoDir=""
           bgImg="https://www.spacex.com/assets/images/starshield/rapid-development.webp"
           bgGradient=''
           textDir="right-[150px] w-[32%]"
@@ -104,6 +108,7 @@ const Starshield = () => {
         <SectionCard 
           bgVideo="" 
           posterVideo=""
+          videoDir=""
           bgImg="https://www.spacex.com/assets/images/starshield/resilient.webp"
           bgGradient='bg-[linear-gradient(to_left,#00000000,#000)]'
           textDir="top-[50%] left-[100px] w-[32%]"
@@ -117,6 +122,7 @@ const Starshield = () => {
         <SectionCard 
           bgVideo="" 
           posterVideo=""
+          videoDir=""
           bgImg="https://www.spacex.com/assets/images/starshield/proven-partnerships.webp"
           bgGradient='bg-[linear-gradient(to_right,#00000000,#000)]'
           textDir="top-[40%] right-[150px] w-[32%]"

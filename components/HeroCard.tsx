@@ -18,7 +18,7 @@ const HeroCard = ({ bgImg, header, desc, bgGradient } : card) => {
         }
         
         <div className="absolute top-[33.5%] flex flex-col items-center w-full h-full max-ipad:w-[50%]">
-          <h3 className={"h-[120px] max-w-[585px]"}>{header}</h3>
+          <h3 className="h-[120px]">{header}</h3>
           <p className="uppercase mt-[22px]">{desc}</p>
         </div>
     </div>

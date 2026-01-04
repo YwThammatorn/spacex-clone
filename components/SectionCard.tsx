@@ -1,6 +1,7 @@
 interface card{
     bgVideo: string,
     posterVideo: string,
+    videoDir: string,
     bgImg: string,
     header: string,
     desc: string,
@@ -10,11 +11,11 @@ interface card{
     button: React.ReactNode
 }
 
-const SectionCard = ({ bgVideo, posterVideo, bgImg, header, desc, bgGradient, textDir, lineHeight, button } : card) => {
+const SectionCard = ({ bgVideo, posterVideo, videoDir, bgImg, header, desc, bgGradient, textDir, lineHeight, button } : card) => {
   return (
     <div className="relative flex items-center h-[max(100svh,941px)] w-full">
         {bgVideo ? 
-            <video autoPlay loop preload="auto" poster={posterVideo} className="w-full h-full object-cover">
+            <video autoPlay loop preload="auto" poster={posterVideo} className={"absolute w-full h-full object-cover "+videoDir}>
             <source type="video/mp4" src={bgVideo}></source>
             </video>
             :
@@ -32,7 +33,7 @@ const SectionCard = ({ bgVideo, posterVideo, bgImg, header, desc, bgGradient, te
 
         }
         
-        <div className={"absolute max-w-[650px] " + textDir + " max-ipad:w-[50%]"}>
+        <div className={"absolute " + textDir + " max-ipad:w-[50%]"}>
           <h1 className={"uppercase max-w-[585px]"} style={{lineHeight: lineHeight+'rem'}}>{header}</h1>
           <p className="mt-[15px]">{desc}</p>
           {button}
